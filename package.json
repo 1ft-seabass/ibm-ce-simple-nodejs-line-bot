@@ -1,0 +1,23 @@
+{
+  "name": "ibm-ce-simple-nodejs-base",
+  "version": "1.0.0",
+  "description": "This is a simple Node.js IBM Code Engine base repository.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ft-seabass/ibm-ce-simple-nodejs-line-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ft-seabass/ibm-ce-simple-nodejs-line-bot/issues"
+  },
+  "homepage": "https://github.com/1ft-seabass/ibm-ce-simple-nodejs-line-bot#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
