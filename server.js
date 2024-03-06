@@ -17,6 +17,8 @@ app.use(express.static(__dirname + '/public'));
 
 // 実際にメッセージを受け付ける
 app.post('/webhook', line.middleware(config), (req, res) => {
+  console.log('/webhook');
+
     console.log(req.body.events);
 
     // ここの if 文は developer console の「接続確認」用なので削除して問題ないです。
@@ -34,6 +36,8 @@ app.post('/webhook', line.middleware(config), (req, res) => {
 const client = new line.messagingApi.MessagingApiClient(config);
 
 async function handleEvent(event) {
+  console.log('/handleEvent');
+
   if (event.type !== 'message' || event.message.type !== 'text') {
     return Promise.resolve(null);
   }
